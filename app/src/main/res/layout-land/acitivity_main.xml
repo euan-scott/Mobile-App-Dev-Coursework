@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/salutation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Mobile Platform Development"
+            android:textSize="18sp"
+            android:padding="4dp" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Press to get data"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/acknowledgement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contains Fx Currency Exchange data"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/rawDataDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Press button to load data"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search currency..."
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ratesListView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

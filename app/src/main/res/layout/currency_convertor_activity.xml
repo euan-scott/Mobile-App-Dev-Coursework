@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/currency_convertor_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txtCurrencyInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Currency name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtRateInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 GBP = X CUR"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Enter amount"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupDirection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp">
+
+            <RadioButton
+                android:id="@+id/rdoGbpToCur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GBP → Currency" />
+
+            <RadioButton
+                android:id="@+id/rdoCurToGbp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Currency → GBP" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Result will appear here"
+            android:layout_marginTop="16dp" />
+
+
+        <Button
+            android:id="@+id/btnConvert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convert Currency"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Exchange Rates"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
